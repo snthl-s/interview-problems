@@ -121,3 +121,13 @@ function palindrome(str) {
 }
    
 ```
+
+## Reverse an Integer
+
+```
+function reverseInt(n) {
+
+    return Math.sign(n)*parseInt(n.toString().split('').reduce((num,rev) => rev+num,''));
+
+}
+```
