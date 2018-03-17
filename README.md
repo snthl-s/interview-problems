@@ -131,3 +131,26 @@ function reverseInt(n) {
 
 }
 ```
+
+## Find maximum repeated characted in a string
+
+```
+function maxChar(str) {
+
+    chars = {};
+    max = 0;
+
+    for(let char of str){
+        chars[char] = chars[char] + 1 || 1;
+    }  
+    
+    for(let char in chars)
+    {
+        if(chars[char] > max)
+        {
+            max = char;
+        }
+    }   
+    return max;
+}
+```
