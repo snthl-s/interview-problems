@@ -6,7 +6,7 @@ This page contains basic problems solved with JavaScript code.
 
 For each problem solutions are given in the folders with test scripts.
 
-## Install Unit Testing Package 
+## Install Unit Test Package 
 
 Jest is used by Facebook to test all JavaScript code including React applications.
 
