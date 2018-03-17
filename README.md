@@ -102,4 +102,13 @@ function reverse(str) {
 
 ```
 
+## Check the given string is a Palindrome
+
+```
+function palindrome(str) {
+
+   return str === str.split('').reduce((rev,char)=>char+rev,'');
+   
+}
+```
 
