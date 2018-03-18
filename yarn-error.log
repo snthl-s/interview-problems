@@ -15,7 +15,8 @@ Platform:
 
 npm manifest: 
   {
-    "devDependencies": {}
+    "devDependencies": {},
+    "dependencies": {}
   }
 
 yarn manifest: 

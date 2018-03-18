@@ -179,3 +179,18 @@ function fizzBuzz(n) {
 
 }
 ```
+
+## Split an array into chunks
+
+```
+
+function chunk(array, size) {
+
+    var chunk = [];
+    for(let i= 0 ; array.length > 0;i++)
+    {
+        chunk[i] =  array.splice(0,size);
+    }
+    return chunk;
+}
+```
