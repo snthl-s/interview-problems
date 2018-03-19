@@ -217,14 +217,20 @@ Function to capitalize the first letter of each word in the string
 
 ```
 function capitalize(str) {
-   
-    const arr = str.split(' ');
-    const chars = [];
-    for(let char of arr)
+    let result = str[0].toUpperCase();
+
+    for(let i = 1 ; i < str.length ; i++ )
     {
-        chars.push(char[0].toUpperCase()+char.slice(1));
+        if(str[i-1] === ' ')
+        {
+            result += str[i].toUpperCase();   
+        }
+        else
+        {
+            result += str[i];
+        }
     }
-    const capitalize = chars.join(' ');
-    return capitalize;
+
+    return result;
 }
 ```
