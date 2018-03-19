@@ -15,9 +15,7 @@ function chunk(array, size) {
     {
         chunk[i] =  array.splice(0,size);
     }
-    
     return chunk;
-
 }
 
 module.exports = chunk;
