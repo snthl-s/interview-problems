@@ -292,3 +292,30 @@ function steps(n) {
     }
 }
 ```
+## Pyramid
+Print a pyramid using recursive function
+
+```
+function pyramid(n, row = 0, block = '') {
+let base = (n * 2) - 1;    
+let middle = Math.floor(base/2);
+if(n === row)
+{
+    return;
+}
+if(base === block.length)
+{
+    console.log(block);
+    pyramid(n,row + 1);
+    return;
+}
+if (block.length >= middle - row && block.length <= middle + row)
+{  
+    block += '#';
+}
+else{
+    block += ' ';
+}
+    pyramid(n,row,block);
+}
+```
