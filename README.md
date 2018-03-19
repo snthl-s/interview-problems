@@ -210,3 +210,21 @@ function anagrams(stringA, stringB) {
 
 }
 ```
+
+## Capitalize
+
+Function to capitalize the first letter of each word in the string
+
+```
+function capitalize(str) {
+   
+    const arr = str.split(' ');
+    const chars = [];
+    for(let char of arr)
+    {
+        chars.push(char[0].toUpperCase()+char.slice(1));
+    }
+    const capitalize = chars.join(' ');
+    return capitalize;
+}
+```
