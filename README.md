@@ -235,7 +235,7 @@ function capitalize(str) {
 }
 ```
 
-## Print Steps
+## Steps
 
 The function should console log a step shape with N levels using the # character
 
@@ -317,5 +317,49 @@ else{
     block += ' ';
 }
     pyramid(n,row,block);
+}
+```
+## Vowels
+
+Find Number of vowels in a given string
+
+### Iterative Solution
+
+```
+function vowels(str) {
+
+    let result = 0;
+    const arr = str.toLowerCase().split('');
+    for (let char of arr) {
+        if (char === 'a' || char === 'e' || char === 'i' || char === 'o' || char === 'u') {
+            result++;
+        }
+    }
+    return result;
+}
+```
+
+### Iterative Solution with includes Function
+
+```
+function vowels(str){
+
+    const vowels = 'aeiou';
+    let result = 0;
+    for (let char of str.toLowerCase()) {
+       if(vowels.includes(char))
+        {
+            result++;
+        }
+    }
+    return result;
+
+}
+```
+### RegEx solution
+```
+function vowels(str){
+    const matches = str.match(/[aeiou]/gi);
+    return matches ? matches.length : 0 ;
 }
 ```
